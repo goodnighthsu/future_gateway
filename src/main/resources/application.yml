@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: gateway
+  profiles:
+    active: dev
   cloud:
     gateway:
       globalcors:
@@ -38,5 +40,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-#      defaultZone: http://localhost:8100/eureka
       defaultZone: http://121.5.66.232:8100/eureka
